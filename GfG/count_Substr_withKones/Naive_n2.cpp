@@ -1,5 +1,6 @@
     // Naive solution is to maintain 2 loops and a sum[] array to store the number of
     // 1s present in the right of index
+// comment
     
     long long int countOfSubstringWithKOnes(string s, int k){
         int n = s.length();
