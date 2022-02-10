@@ -1,0 +1,3 @@
+https://www.geeksforgeeks.org/count-substrings-binary-string-containing-k-ones
+
+Asked in Infosys certification exam 
