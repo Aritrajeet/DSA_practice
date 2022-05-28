@@ -1,7 +1,8 @@
 //Question:
 
-//Solution:Method 1 (Brute) : Sort and duplicate will be consecutive
-//Method 2: Floyd slow fast method (Linked list)
+//Solution:Method 1 (Brute) : Sort and duplicate will be consecutive       -O(nlogn)
+//Method 2: Map method - extra space but efficient
+//Method 3: Floyd slow fast method (Linked list)    - efficient and in place
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
