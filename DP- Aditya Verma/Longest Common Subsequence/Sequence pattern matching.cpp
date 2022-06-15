@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//There is a better approach using 2 ptr.
+
 // Question: https://leetcode.com/problems/is-subsequence/
 bool sequencePatternMatch(string a, string b)
 {
@@ -24,7 +26,7 @@ bool sequencePatternMatch(string a, string b)
             }
         }
     }
-    return (t[m][n] == a.length());
+    return (t[m][n] == a.length());         //for it to be subsequence the first string should be equal to LCS of both
 }
 
 int main()
