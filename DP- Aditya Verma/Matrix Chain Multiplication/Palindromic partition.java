@@ -90,13 +90,6 @@ class program
 
      int result = palindromeParitioning(str , 0 , str.length()-1 , dp);
   
-     for(int[] arr : dp)
-     {
-        for(int val : arr)
-          System.out.print(val + "   ");
-
-        System.out.println();
-     }
      System.out.println(result);
      
 
