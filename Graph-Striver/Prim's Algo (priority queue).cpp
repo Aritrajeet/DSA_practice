@@ -1,3 +1,8 @@
+//Question : https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1#
+
+//Here we need to find the sum of MST. We can also print the MST using a parent arr.
+
+
 class Solution
 {
 	public:
