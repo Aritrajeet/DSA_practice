@@ -21,3 +21,32 @@
         combinationSumRec(candidates, target, 0 , 0, ans,temp);         // sum=0 and index=0
         return ans;
     }
+
+// Another approach - Take and not take
+class Solution {
+public:
+    void combinationRec(vector<int>&nums, int target, vector<int> &temp, vector<vector<int>> &ans, int idx){
+        if(idx >= nums.size())
+            return;
+        if(target == 0){
+            ans.push_back(temp);
+            return;
+        }
+        if(target < 0){
+            return;
+        }
+        // take curr ele
+        temp.push_back(nums[idx]);
+        combinationRec(nums, target-nums[idx] ,temp, ans, idx);
+        temp.pop_back();
+        
+        // dont take curr ele
+        combinationRec(nums,target,temp,ans,idx+1);
+    }
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>> ans;
+        vector<int> temp;
+        combinationRec(candidates, target, temp, ans, 0);
+        return ans;
+    }
+};
